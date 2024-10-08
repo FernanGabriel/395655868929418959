@@ -1,0 +1,237 @@
+main {
+    .cart-page {
+        .content {
+            padding: 70px 0px 50px;
+            background: white;
+
+            .entry-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .cart-table {
+                    width: 68%;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    max-height: 50px;
+
+
+                    th,
+                    td {
+                        text-align: center;
+                    }
+
+                    .product-name {
+                        text-align: left;
+                        width: 20%;
+                    }
+
+                    thead {
+                        th {
+                            text-transform: uppercase;
+                            padding-bottom: 20px;
+
+                            span {
+                                font-weight: 500;
+                                font-size: 14px;
+                            }
+                        }
+
+                        border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+                    }
+
+                    tbody {
+                        .data-row {
+                            border-top: 1px solid rgba(225, 225, 225, 0.5);
+
+                            .product-remove {
+                                .remove {
+                                    font-size: 27px;
+                                    font-weight: 100;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        color: $secondTxtColor;
+                                    }
+                                }
+                            }
+
+                            .product-thumbnail {
+                                img {
+                                    width: 100px;
+                                    height: auto;
+                                }
+                            }
+
+                            .product-name {
+                                display: flex;
+                                flex-direction: column;
+                                width: 90%;
+                                padding-top: 20%;
+
+                                a {
+                                    margin-block: 10px;
+                                    color: $midBlueColor;
+                                    transition: 0.3s ease;
+
+                                    &:hover {
+                                        color: $secondTxtColor;
+                                    }
+                                }
+
+                                .view-box {
+                                    width: 35px;
+                                    height: 25px;
+                                    cursor: pointer;
+                                    background-color: rgba(225, 225, 225, .3);
+                                    display: inline-block;
+                                    margin-bottom: 7px;
+                                    position: relative;
+                                    transition: 0.3s ease-in-out;
+
+                                    &:hover {
+                                        background-color: $secondTxtColor;
+                                    }
+
+                                    &:hover .trendcard-add {
+                                        color: white !important;
+                                    }
+
+                                    .trendcard-add {
+                                        margin-top: 0px;
+                                        opacity: 1;
+                                        position: absolute;
+                                        font-size: 13px;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        color: rgba(0, 0, 0, .8);
+                                    }
+                                }
+                            }
+
+                            .product-price {
+                                .price-txt {
+                                    font-weight: 500;
+                                }
+                            }
+
+                            .product-quantity {
+                                .quantity-input {
+                                    position: relative;
+                                    width: 90px;
+                                    margin: auto;
+
+                                    .input-text {
+                                        text-align: center;
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 13px 20px 13px 6px;
+                                        font-size: 14px;
+                                        outline: none;
+                                        border-radius: 3px;
+                                        border: 2px solid rgba(190, 190, 190, 0.521);
+
+                                        &:focus {
+                                            border: 2px solid $secondTxtColor;
+
+                                        }
+
+                                        &::-webkit-outer-spin-button,
+                                        &::-webkit-inner-spin-button {
+                                            -webkit-appearance: none;
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    .input-arrow {
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            color: $secondTxtColor;
+                                        }
+                                    }
+
+                                    .quantity-plus {
+                                        position: absolute;
+                                        right: 10px;
+                                        top: 5px;
+                                    }
+
+                                    .quantity-minus {
+                                        position: absolute;
+                                        right: 10px;
+                                        bottom: 5px;
+                                    }
+                                }
+
+                                input[type=number] {
+                                    -moz-appearance: textfield;
+                                }
+                            }
+
+                            .product-subtotal {
+                                .nobr {
+                                    font-weight: 500;
+                                }
+                            }
+
+                            td {
+                                padding-block: 15px;
+                            }
+
+                        }
+
+                        .empty-text {
+                            font-size: 18px;
+                            // text-align: center;
+                            padding-top: 30px;
+                        }
+                    }
+                }
+
+                .cart-totals {
+                    width: 28%;
+                    height: 250px;
+                    background: #F5F5F5;
+
+                    .cart-totals-content {
+                        width: 100%;
+                        padding: 30px 20px;
+
+                        h2 {
+                            font-weight: 500;
+                            padding-bottom: 20px;
+                        }
+
+                        .cart-total-text {
+                            border-block: 1px solid rgba(225, 225, 225, 0.8);
+                            padding-block: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            font-weight: 500;
+                        }
+
+                        .proceed-btn {
+                            width: 100%;
+                            outline: none;
+                            border: none;
+                            color: black;
+                            background: $secondTxtColor;
+                            padding: 16px 45px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            margin-top: 20px;
+                            cursor: pointer;
+                            transition: .3s ease-in-out;
+
+                            &:hover {
+                                background: $secondBgColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

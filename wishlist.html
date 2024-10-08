@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Wishlist</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="./img/logo/logo-title.png">
+    <link rel="stylesheet" href="./node_modules/izitoast/dist/css/iziToast.min.css">
+</head>
+
+<body>
+    <div class="quick-view-modal"></div>
+    <div class="mobile-main-menu">
+        <div class="mobile-main-menu__container">
+            <div class="head-menu-mobile">
+                <span class="main-link-enter">
+                    Login</span>
+                <div class="author">
+                    <img class="avatar" src="./img/icon/none.jpg" alt="Avatar Mobile">
+                    <span class="author-name">Guest</span>
+                    <span class="email">Example@email.com</span>
+                </div>
+            </div>
+            <div class="main-menu-mobile">
+                <div class="main-menu-bar-mobile">
+                    <div class="main-menu-bar-mobile__txt">
+                        <p>MEU MENU</p>
+                    </div>
+                    <div class="main-menu-bar-mobile__close-btn">
+                        <a class="btn close-menu-btn">x</a>
+                    </div>
+                </div>
+                <div class="main-menu-links">
+                    <div class="menu-link"><a class="link-text" href="index.html"> Home</a></div>
+                    <div class="menu-link"><a class="link-text" href="wishlist.html">Wishlist</a></div>
+                    <div class="menu-link"><a class="link-text" href="cart.html">Carrinho</a></div>
+                    <div class="menu-link"><a class="link-text" href="">Shop</a></div>
+                    <div class="menu-link"><a class="link-text" href="">Blog</span></a></div>
+                    <div class="menu-link"><a class="link-text" href="">Sobre</a></div>
+                    <div class="menu-link"><a class="link-text" href="">Contato</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-main-menu__overlay close-menu-btn"></div>
+    </div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-img" alt="logo" src="./img/logo/logo.png">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="I'm shopping for ...">
+                    <div class="search-submit">
+                        <i class="fas fa-search submit-btn"></i>
+                    </div>
+                </div>
+                <div class="user-prop">
+                    <div class="box">
+                        <a href="#">
+                            <div class="left">
+                                <i class="far fa-user"></i>
+                            </div>
+                            <div class="right">
+                                <a class="title" href="#">Login</li></a>
+                                <a class="link" href="#">Minha conta</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="wishlist.html">
+                            <div class="left count-box">
+                                <i class="far fa-heart"></i>
+                                <span class="circle"><span class="count wishlist-count">0</span></span>
+                            </div>
+                            <div class="right">
+                                <a class="title"> Favoritos</a>
+                                <a class="link" href="wishlist.html">Minha Wishlist</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box res-mt-15">
+                        <a href="cart.html">
+                            <div class="left count-box">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span class="circle"><span class="count addtocart-count">0</span></span>
+                            </div>
+                            <div class="right">
+                                <a class="title">Meu carrinho</a>
+                                <a class="link total-price-count" href="cart.html">$0.00</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="mobile-menu">
+                    <a class="mobile-menu-bar menu-btn" href="javascript:void(0)">
+                        <i class="fas fa-bars hamburger"></i>
+                        <span class="menu-txt">MENU</span>
+                    </a>
+                </div>
+                <div class="menu">
+                    <a class="menu-link" href="index.html">HOME</a>
+                    <a class="menu-link" href="#">SHOP</a>
+                    <a class="menu-link" href="#">BLOG</a>
+                    <a class="menu-link" href="#">SOBRE</a>
+                    <a class="menu-link" href="#">CONTATO</a>
+                </div>
+                <div class="add-text">
+                    <P>Gaste R$250,00 a mais e ganhe frete grátis!</P>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wish-list-page">
+            <div class="page-head">
+                <div class="head-img">
+                    <img class="img" src="./img/page-head/head-cart.jpg" alt="wishlishhead">
+                </div>
+                <div class="container">
+                    <div class="head-inner">
+                        <h1 class="page-title">Wishlist</h1>
+                        <div class="page-nav">
+                            <p>
+                                <a class="nav-link" href="index.html">Home</a>
+                                / Wishlist
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="entry-content">
+                        <table class="cart wishlist-table">
+                            <thead>
+                                <tr>
+                                    <th class="product-remove">
+                                    </th>
+                                    <th class="product-thumbnail"></th>
+                                    <th class="product-name">
+                                        <span class="nobr">
+                                            Nome do Produto </span>
+                                    </th>
+                                    <th class="product-price">
+                                        <span class="nobr">
+                                            Preço Unitário </span>
+                                    </th>
+                                    <th class="product-stock-status">
+                                        <span class="nobr">
+                                            Status de Estoque </span>
+                                    </th>
+                                    <th class="product-add-to-cart">
+                                        <span class="nobr">
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="wishlist-items-wrapper">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="content">
+                            <h5>ENTREGA GRÁTIS</h5>
+                            <p>Para os pedidos acima de R$250</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <div class="content">
+                            <h5>PAGAMENTO SEGURO</h5>
+                            <p>Facilidade de acesso</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="content">
+                            <h5>CENTRAL DE AJUDA</h5>
+                            <p>24h por 7 dias na semana</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="fas fa-money-bill-alt"></i>
+                        </div>
+                        <div class="content">
+                            <h5>DEVOLUÇÃO</h5>
+                            <p>Com garantia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <div class="content-box download-app">
+                        <div class="content">
+                            <h3>Visite nossas Redes Sociais</h3>
+                            <p>Nós da BarlezGlam estamos disponiveis em nossas redes sociais.</p>
+                        </div>
+                        <div class="download">
+                            <a class="mr-15" href="#"><img src="./img/logo/LOGO2.png" alt=""></a>
+                        </div>
+                        <div class="links">
+                            <a style="background-color: #3c5b9b;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a style="background-color: #40c1df;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a style="background-color: #c619b8;" href="https://www.instagram.com/barlez_glam/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="content">
+                            <h3>Atendimento ao cliente</h3>
+                            <ul>
+                                <a href="#">
+                                    <li class="link">Central de Ajuda</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Contate-nos</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Denunciar abuso</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Políticas e Regras</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Política de Devoluções Online</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-box sign-up">
+                        <div class="content">
+                            <h3>Envie sua sugestão</h3>
+                            <p>Envie suas avaliações e dúvidas sobre nosso site</p>
+                        </div>
+                        <div class="newsletter">
+                            <input type="text" placeholder="Digite seu email">
+                            <button>ENVIAR</button>
+                        </div>
+                        <div class="email-text">
+                            <p>Ao fornecer seu endereço de e-mail, você concorda com nossos
+                                <a href="#" class="link">Termos</a> & <a href="#" class="link">Condições.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-payment">
+                        <img src="./img/footter/payment.png" alt="">
+                    </div>
+                    <div class="copyright">
+                        <span>Direitos autorais de ©BarlezGlam. Todos os direitos reservados a ©BarlezGlam.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

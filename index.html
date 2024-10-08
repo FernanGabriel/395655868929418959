@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARLEZGLAM</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+        integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="./img/logo/logo-title.png">
+    <link rel="stylesheet" href="./node_modules/izitoast/dist/css/iziToast.min.css">
+</head>
+
+<body>
+    <div class="quick-view-modal"></div>
+    <div class="mobile-main-menu">
+        <div class="mobile-main-menu__container">
+            <div class="head-menu-mobile">
+                <span class="main-link-enter">
+                    Login</span>
+                <div class="author">
+                    <img class="avatar" src="./img/icon/none.jpg" alt="Avatar Mobile">
+                    <span class="author-name">Guest</span>
+                    <span class="email">Example@email.com</span>
+                </div>
+            </div>
+            <div class="main-menu-mobile">
+                <div class="main-menu-bar-mobile">
+                    <div class="main-menu-bar-mobile__txt">
+                        <p>MAIN MENU</p>
+                    </div>
+                    <div class="main-menu-bar-mobile__close-btn">
+                        <a class="btn close-menu-btn">x</a>
+                    </div>
+                </div>
+                <div class="main-menu-links">
+                    <div class="menu-link"><a class="link-text" href="index.html"> Home</a></div>
+                    <div class="menu-link"><a class="link-text" href="wishlist.html">Wishlist</a></div>
+                    <div class="menu-link"><a class="link-text" href="cart.html">Carrinho</a></div>
+                    <div class="menu-link"><a class="link-text" href="">Shop</a></div>
+                    <div class="menu-link"><a class="link-text" href="">Blog</span></a></div>
+                    <div class="menu-link"><a class="link-text" href="">Sobre</a></div>
+                    <div class="menu-link"><a class="link-text" href="">Contato</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-main-menu__overlay close-menu-btn"></div>
+    </div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-img" alt="logo" src="./img/logo/logo.png">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="I'm shopping for ...">
+                    <div class="search-submit">
+                        <i class="fas fa-search submit-btn"></i>
+                    </div>
+                </div>
+                <div class="user-prop">
+                    <div class="box">
+                        <a href="#">
+                            <div class="left">
+                                <i class="far fa-user"></i>
+                            </div>
+                            <div class="right">
+                                <a class="title" href="#">Login</li></a>
+                                <a class="link" href="#">Minha conta</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="wishlist.html">
+                            <div class="left count-box">
+                                <i class="far fa-heart"></i>
+                                <span class="circle"><span class="count wishlist-count">0</span></span>
+                            </div>
+                            <div class="right">
+                                <a class="title"> Favoritos</a>
+                                <a class="link" href="wishlist.html">Minha Wishlist</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box res-mt-15">
+                        <a href="cart.html">
+                            <div class="left count-box">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span class="circle"><span class="count addtocart-count">0</span></span>
+                            </div>
+                            <div class="right">
+                                <a class="title">Meu carrinho</a>
+                                <a class="link total-price-count" href="cart.html">$0.00</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="mobile-menu">
+                    <a class="mobile-menu-bar menu-btn" href="javascript:void(0)">
+                        <i class="fas fa-bars hamburger"></i>
+                        <span class="menu-txt">MENU</span>
+                    </a>
+                </div>
+                <div class="menu">
+                    <a class="menu-link" href="index.html">HOME</a>
+                    <a class="menu-link" href="#">SHOP</a>
+                    <a class="menu-link" href="#">BLOG</a>
+                    <a class="menu-link" href="#">SOBRE</a>
+                    <a class="menu-link" href="#">CONTATO</a>
+                </div>
+                <div class="add-text">
+                    <P>Gaste R$250,00 a mais e ganhe frete grátis!</P>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="vip-products">
+            <div class="container">
+                <div class="vip-products-left">
+                    <div class="swiper vip-product-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/slide/slide-home1.png" alt="vip1">
+                                <div class="content">
+                                    <h2 class="swiper-title">Renovação Suave para Todos</h2>
+                                    <h2 class="swiper-title">os Tipos de Pele</h2>
+                                    <p>      </p>
+                                    <a href="./product18.html">VEJA MAIS</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide/slide-home2.png" alt="vip2">
+                                <div class="content">
+                                    <h2 class="swiper-title">Brilho e Renovação </h2>
+                                    <h2 class="swiper-title">para Sua Pele</h2>
+                                    <p>     </p>
+                                    <a href="./product15.html">VEJA MAIS</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide/slide-home3.png" alt="vip3">
+                                <div class="content">
+                                    <h2 class="swiper-title">Força e Brilho Incomparáveis</h2>
+                                    <h2 class="swiper-title"> para Seus Cabelos</h2>
+                                    <p>     </p>
+                                    <a href="./product13.html">VEJA MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="vip-products-right ">
+                    <div class="vip-right-inner">
+                        <div class="row">
+                            <div class="banner mr-20">
+                                <img src="img/banner/banner1.png" alt="banner1" draggable="false">
+                                <div class="content">
+                                    <h3><a class="banner-title" href="#">Canyon<br> Star Raider</a></h3>
+                                    <p class="banner-txt">Headphone & Audio</p>
+                                </div>
+                            </div>
+                            <div class="banner">
+                                <img src="img/banner/banner3.png" alt="banner2" draggable="false">
+                                <div class="content">
+                                    <h3><a class="banner-title" href="#">Galaxy <br> Buds Plus</a></h3>
+                                    <p class="banner-txt">Wireless Earbuds</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="banner mr-20">
+                                <img src="img/banner/banner2.png" alt="bannerr3" draggable="false">
+                                <div class="content">
+                                    <h3><a class="banner-title" href="#">Phone <br> Galaxy S20</a></h3>
+                                    <p class="banner-txt">Cellphone & Tablets</p>
+                                </div>
+                            </div>
+                            <div class="banner">
+                                <img src="img/banner/banner4.png" alt="banner4" draggable="false">
+                                <div class="content">
+                                    <h3><a class="banner-title" href="#">Chair <br> Swoon Lounge</a></h3>
+                                    <p class="banner-txt">Decor & Furniture</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products trend-products">
+            <div class="container">
+                <div class="headline">
+                    <h3>Produtos Populares</h3>
+                    <a href="" class="link">Ver tudo<i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="swiper-container productSwiper">
+                    <div class="swiper-wrapper trend-products-swiper"></div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-categories">
+            <div class="container">
+                <div class="headline">
+                    <h3>Melhores Categorias</h3>
+                    <a href="#" class="link">Ver tudo<i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="swiper-container popularSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-img">
+                                <img src="img/categories/1.jpg" alt="category1">
+                            </div>
+                            <div class="content">
+                                <h4>Kit Banho</h4>
+                                <p>(12 itens)</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-img">
+                                <img src="img/categories/2.jpg" alt="category2">
+                            </div>
+                            <div class="content">
+                                <h4>Cuidados Capilares</h4>
+                                <p>(19 itens)</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-img">
+                                <img src="img/categories/3.jpg" alt="category3">
+                            </div>
+                            <div class="content">
+                                <h4>Lançamentos</h4>
+                                <p>(07 itens)</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-img">
+                                <img src="img/categories/4.jpg" alt="category4">
+                            </div>
+                            <div class="content">
+                                <h4>Tratamento Intensivo</h4>
+                                <p>(10 itens)</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-img">
+                                <img src="img/categories/5.jpg" alt="category5">
+                            </div>
+                            <div class="content">
+                                <h4>Proteção Solar</h4>
+                                <p>(14 itens)</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-img">
+                                <img src="img/categories/6.jpg" alt="category6">
+                            </div>
+                            <div class="content">
+                                <h4>Cuidados com a Pele</h4>
+                                <p>(12 itens)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discount-products">
+            <div class="container">
+                <div class="products-container">
+                    <div class="card mr-15">
+                        <div class="card-img">
+                            <img src="img/upto/banner-5.png" alt="dscntbanner1" draggable="false">
+                        </div>
+                        <div class="content">
+                            <a href="#">
+                                <span>Lançamento</span>
+                                <span>DaBelle</span>
+                            </a>
+                            <p>De até 30%</p>
+                        </div>
+                    </div>
+                    <div class="card mr-15">
+                        <div class="card-img">
+                            <img src="img/upto/banner-6.png" alt="dscntbanner2" draggable="false">
+                        </div>
+                        <div class="content">
+                            <a href="#">
+                                <span>Novidades</span>
+                                <span>Óleos Corporais</span>
+                            </a>
+                            <p>De até 20%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/upto/banner-7.png" alt="dscntbanner3" draggable="false">
+                        </div>
+                        <div class="content">
+                            <a href="#">
+                                <span>Promoções</span>
+                                <span>PRINCIPIA</span>
+                            </a>
+                            <p>De até 40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="marquee-inform">
+            <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="left"
+                scrollamount="10">
+                <span>Entrega grátis para todo o Brasil - Devolução acima de R$150 (Exceto produtos de Skincare)</span>
+                <span>Semana de Beleza / Mega Descontos e Promoções</span>
+                <span>Problemas com seus pedidos? Veja mais em: Central de Ajuda</span>
+                <span>Sempre com novidades. Produtos Não Testados em Animais.</span>
+            </marquee>
+        </section>
+        <section class="products recommend-products">
+            <div class="container">
+                <div class="headline">
+                    <h3>Recomendados para você</h3>
+                    <a href="" class="link">Ver tudo<i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="swiper-container productSwiper">
+                    <div class="swiper-wrapper recommend-products-swiper">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="headline">
+                <h3>Saiba mais do mundo da beleza</h3>
+                <a href="#" class="link">Ver Tudo <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="swiper-container blogSwiper">
+                <div class="swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="./img/blog/14.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4><a class="link" href="#">Importância do Protetor Solar Diário</a></h4>
+                            <div class="post-by">
+                                <span>POSTADO POR:</span><span><a href="#" class="poster">CLARA BARLEZ</a></span>
+                            </div>
+                            <p>
+                                Explicação sobre a necessidade de usar protetor solar todos os dias, independentemente do clima ou da estação.
+                            </p>
+                            <div class="read-more">
+                                <span><a class="link" href="#">Leia Mais</a></span>
+                                <span>Mar 11 2024</span>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="./img/blog/6_12.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4><a class="link" href="#">5 Hábitos que irá fazer diferenças na sua pele</a></h4>
+                            <div class="post-by">
+                                <span>POSTADO POR:</span><span><a href="#" class="poster">CLARA BARLEZ</a></span>
+                            </div>
+                            <p>
+                                Manter a pele saudável e radiante vai além de usar produtos caros. Há cuidados simples, mas essenciais.
+                            </p>
+                            <div class="read-more">
+                                <span><a class="link" href="#">Leia Mais</a></span>
+                                <span>Mar 10 2024</span>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="./img/blog/3_122.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4><a class="link" href="#">Melhor produto para clarear suas manchas</a></h4>
+                            <div class="post-by">
+                                <span>POSTADO POR:</span><span><a href="#" class="poster">CLARA BARLEZ</a></span>
+                            </div>
+                            <p>
+                                Explicação sobre como a vitamina C atua na pele, promovendo luminosidade, uniformização do tom e combate aos sinais de envelhecimento.
+                            </p>
+                            <div class="read-more">
+                                <span><a class="link" href="#">Leia Mais</a></span>
+                                <span>Fev 09 2024</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="./img/blog/4_12.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4><a class="link" href="#">Sabonetes para Diferentes Tipos de Pele</a></h4>
+                            <div class="post-by">
+                                <span>POSTADO POR:</span><span><a href="#" class="poster">CLARA BARLEZ</a></span>
+                            </div>
+                            <p>
+                                Como escolher o sabonete certo para pele seca, oleosa, sensível ou mista.
+
+
+                            </p>
+                            <div class="read-more">
+                                <span><a class="link" href="#">Leia Mais</a></span>
+                                <span>Fev 08 2024</span>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="./img/blog/6_1.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4><a class="link" href="#">Técnicas de Lavagem Capilar Para Você</a></h4>
+                            <div class="post-by">
+                                <span>POSTADO POR:</span><span><a href="#" class="poster">CLARA BARLEZ</a></span>
+                            </div>
+                            <p>
+                                Instruções sobre como lavar o cabelo corretamente, incluindo dicas sobre a frequência ideal de lavagem
+                            </p>
+                            <div class="read-more">
+                                <span><a class="link" href="#">Leia Mais</a></span>
+                                <span>Jan 06 2024</span>
+                            </div>
+                      
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="./img/blog/22.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4><a class="link" href="#">Como Usar Óleo Corporal Eficazmente</a></h4>
+                            <div class="post-by">
+                                <span>POSTADO POR:</span><span><a href="#" class="poster">CLARA BARLEZ</a></span>
+                            </div>
+                            <p>
+                                Dicas para aplicar óleos de forma a obter os melhores resultados.
+                            </p>
+                            <div class="read-more">
+                                <span><a class="link" href="#">Leia Mais</a></span>
+                                <span>AGO 07 2024</span>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <div class="brandSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_07.png" alt="brand_07">
+                    </div>
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_02.png" alt="brand_02">
+                    </div>
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_03.png" alt="brand_03">
+                    </div>
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_04.png" alt="brand_04">
+                    </div>
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_07.png" alt="brand_07">
+                    </div>
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_06.png" alt="brand_06">
+                    </div>
+                    <div class="swiper-slide brand">
+                        <img src="./img/brands/brand_01.png" alt="brand_01">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="content">
+                            <h5>ENTREGA GRÁTIS</h5>
+                            <p>Para os pedidos acima de R$250</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <div class="content">
+                            <h5>PAGAMENTO SEGURO</h5>
+                            <p>Facilidade de acesso</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="content">
+                            <h5>CENTRAL DE AJUDA</h5>
+                            <p>24h por 7 dias na semana</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <i class="fas fa-money-bill-alt"></i>
+                        </div>
+                        <div class="content">
+                            <h5>DEVOLUÇÃO</h5>
+                            <p>Com garantia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <div class="content-box download-app">
+                        <div class="content">
+                            <h3>Visite nossas Redes Sociais</h3>
+                            <p>Nós da BarlezGlam estamos disponiveis em nossas redes sociais.</p>
+                        </div>
+                        <div class="download">
+                            <a class="mr-15" href="#"><img src="./img/logo/LOGO2.png" alt=""></a>
+                        </div>
+                        <div class="links">
+                            <a style="background-color: #3c5b9b;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a style="background-color: #40c1df;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a style="background-color: #c619b8;" href="https://www.instagram.com/barlez_glam/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="content">
+                            <h3>Atendimento ao cliente</h3>
+                            <ul>
+                                <a href="#">
+                                    <li class="link">Central de Ajuda</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Contate-nos</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Denunciar abuso</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Políticas e Regras</li>
+                                </a>
+                                <a href="#">
+                                    <li class="link">Política de Devoluções Online</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-box sign-up">
+                        <div class="content">
+                            <h3>Envie sua sugestão</h3>
+                            <p>Envie suas avaliações e dúvidas sobre nosso site</p>
+                        </div>
+                        <div class="newsletter">
+                            <input type="text" placeholder="Digite seu email">
+                            <button>ENVIAR</button>
+                        </div>
+                        <div class="email-text">
+                            <p>Ao fornecer seu endereço de e-mail, você concorda com nossos
+                                <a href="#" class="link">Termos</a> & <a href="#" class="link">Condições.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-payment">
+                        <img src="./img/footter/payment.png" alt="">
+                    </div>
+                    <div class="copyright">
+                        <span>Direitos autorais de ©BarlezGlam. Todos os direitos reservados a ©BarlezGlam.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="./node_modules/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+</body>
+
+</html>
